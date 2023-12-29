@@ -32,10 +32,11 @@ header {
     align-items: baseline;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: inherit;
 }
+
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -43,13 +44,13 @@ h1 {
     color: #252525;
 }
 
-#menu  {
+#menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -58,7 +59,7 @@ h1 {
 }
 
 /* Navbar style with dropdown toggle */
-nav{
+nav {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
@@ -73,6 +74,7 @@ nav{
 #nav-toggle:checked~nav {
     display: block;
 }
+
 #nav-toggle {
     display: none;
 }
@@ -90,14 +92,26 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
 
 /* Media query: tablet and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
-    nav{
+    nav {
         display: block;
         position: relative;
         box-shadow: none;
@@ -105,11 +119,11 @@ footer {
         padding-right: 1rem;
     }
 
-    #menu{
+    #menu {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -132,7 +146,7 @@ footer {
 
 /* Media query: laptop and upward (992px and up) */
 @media screen and (min-width: 768px) {
-    #menu a:hover{
+    #menu a:hover {
         border-bottom: 1px solid #3a3a3a
     }
 
